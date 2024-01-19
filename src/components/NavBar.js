@@ -67,11 +67,16 @@ export const NavBar = () => {
             <div className="social-icon">
               <a
                 href="https://www.linkedin.com/in/roberto-andres-patino/"
-                target="blank"
+                target="_blank"
+                rel="noreferrer"
               >
                 <img src={navIcon1} alt=""></img>
               </a>
-              <a href="https://github.com/RobertoPatino1" target="blank">
+              <a
+                href="https://github.com/RobertoPatino1"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={navIcon2} alt=""></img>
               </a>
               {/* <a href="#">
