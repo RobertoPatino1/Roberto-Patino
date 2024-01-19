@@ -5,7 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import logo from "../assets/logo/logo.svg";
 import navIcon1 from "../assets/logo/nav-icon1.svg";
 import navIcon2 from "../assets/logo/nav-icon2.svg";
-import navIcon3 from "../assets/logo/nav-icon3.svg";
+// import navIcon3 from "../assets/logo/nav-icon3.svg";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -65,15 +65,18 @@ export const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#">
+              <a
+                href="https://www.linkedin.com/in/roberto-andres-patino/"
+                target="blank"
+              >
                 <img src={navIcon1} alt=""></img>
               </a>
-              <a href="#">
+              <a href="https://github.com/RobertoPatino1" target="blank">
                 <img src={navIcon2} alt=""></img>
               </a>
-              <a href="#">
+              {/* <a href="#">
                 <img src={navIcon3} alt=""></img>
-              </a>
+              </a> */}
               <button className="vvd" onClick={() => console.log("Connect")}>
                 <span>Let's Connect!</span>
               </button>
