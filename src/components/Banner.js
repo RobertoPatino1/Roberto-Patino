@@ -2,7 +2,9 @@ import { Col, Container, Row } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import { useState, useEffect } from "react";
 
-import headerImg from "../assets/logo/header-img.svg";
+import headerImg from "../assets/img/header-img.svg";
+
+//TODO: MAKE CONNECT BUTTON WORK
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
