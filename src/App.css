@@ -254,13 +254,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .banner .tagline {
   font-weight: 700;
+  color: #f0f0f0;
   letter-spacing: 0.8px;
   padding: 8px 10px;
   background: linear-gradient(
     90.21deg,
-    rgba(170, 54, 124, 0.5) -5.91%,
+    rgba(96, 250, 30, 0.5) -5.91%,
     rgba(74, 47, 189, 0.5) 111.58%
   );
+
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
@@ -406,12 +408,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: absolute;
   width: 0;
   height: 100%;
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  background: linear-gradient(180deg, #60fa1ece -5.91%, #4a2fbd 111.58%);
   top: 0;
   left: 0;
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
+
 .project .nav.nav-pills .nav-link.active::before {
   width: 100% !important;
 }
@@ -647,7 +650,11 @@ h1 .wrap::after {
   content: "";
   width: 1rem;
   height: 3rem;
-  background: #ffffff;
+  background: #5ff025;
   display: inline-block;
   animation: cursor-blink 1s steps(2) infinite;
+}
+
+#cli {
+  color: #5ff025;
 }
