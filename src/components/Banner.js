@@ -6,7 +6,6 @@ import headerImg from "../assets/img/header-img.svg";
 
 import "animate.css";
 import TrackVisibility from "react-on-screen";
-import { isVisible } from "@testing-library/user-event/dist/utils";
 
 //TODO: MAKE CONNECT BUTTON WORK
 
@@ -66,6 +65,7 @@ export const Banner = () => {
                   <span className="tagline">Welcome to my portfolio</span>
                   <h1>
                     {"Hi I'm Roberto! "}
+                    <br></br>
                     <span className="wrap">{text}</span>
                   </h1>
                   <p>
