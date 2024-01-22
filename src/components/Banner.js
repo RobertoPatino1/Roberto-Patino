@@ -2,7 +2,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import { useState, useEffect } from "react";
 
-import headerImg from "../assets/img/Mission Impossible-bro.svg";
+import headerImg from "../assets/img/banner-img.svg";
 
 import "animate.css";
 import TrackVisibility from "react-on-screen";
