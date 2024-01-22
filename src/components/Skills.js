@@ -2,9 +2,9 @@ import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+import meter1 from "../assets/img/offsec_meter.svg";
+import meter2 from "../assets/img/front_end.svg";
+import meter3 from "../assets/img/ds.svg";
 
 export const Skills = () => {
   const responsive = {
@@ -34,11 +34,12 @@ export const Skills = () => {
             <div className="skill-bx">
               <h2>Skills</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua
-                <br></br>Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua
+                From Software Development all the way to Cyber Security and
+                Operative Systems, my skill set is a fusion of creativity and
+                precision. I'm proficient in crafting elegant code for frontend
+                and backend applications, while also dominating the complexities
+                of low-level programming and other Computer Science related
+                fields.
               </p>
               <Carousel
                 responsive={responsive}
@@ -47,15 +48,27 @@ export const Skills = () => {
               >
                 <div className="item">
                   <img src={meter1} alt="Skill-Image1"></img>
-                  <h5>Web Development</h5>
+                  <h5>Offensive Cyber-Security</h5>
+                </div>
+                <div className="item">
+                  <img src={meter1} alt="Skill-Image1"></img>
+                  <h5>Front-end Development</h5>
                 </div>
                 <div className="item">
                   <img src={meter2} alt="Skill-Image2"></img>
-                  <h5>Cyber-Security</h5>
+                  <h5>Back-end Development</h5>
                 </div>
                 <div className="item">
                   <img src={meter3} alt="Skill-Image3"></img>
-                  <h5>Operative Systems</h5>
+                  <h5>Data Science</h5>
+                </div>
+                <div className="item">
+                  <img src={meter3} alt="Skill-Image3"></img>
+                  <h5>AI/ML</h5>
+                </div>
+                <div className="item">
+                  <img src={meter2} alt="Skill-Image3"></img>
+                  <h5>Game Development</h5>
                 </div>
               </Carousel>
             </div>

@@ -54,11 +54,12 @@ export const Projects = () => {
                 >
                   <h2>Projects</h2>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                    These are some of my most remarkable projects, spanning
+                    various domains including software development, CLI tools,
+                    Data Science, Game Development and some Desktop
+                    Applications. Each one represents not only my technical
+                    proficiency but also my passionate approach to
+                    problem-solving and innovation.
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
@@ -67,13 +68,24 @@ export const Projects = () => {
                       id="pills-tab"
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                        <Nav.Link eventKey="first">Web Development</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                        <Nav.Link eventKey="second">
+                          CLI Tools/Low Level
+                        </Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                        <Nav.Link eventKey="third">Data Science/ML</Nav.Link>
+                      </Nav.Item>
+                      {/* Nuevas Pestañas */}
+                      <Nav.Item>
+                        <Nav.Link eventKey="fourth">Game Development</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="fifth">
+                          Desktop Applications
+                        </Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
@@ -84,12 +96,12 @@ export const Projects = () => {
                     >
                       <Tab.Pane eventKey="first">
                         <Row>
-                          {projects.map((project, index) => {
-                            return <ProjectCard key={index} {...project} />;
-                          })}
+                          {projects.map((project, index) => (
+                            <ProjectCard key={index} {...project} />
+                          ))}
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="section">
+                      <Tab.Pane eventKey="second">
                         <p>
                           Lorem ipsum dolor sit amet consectetur adipisicing
                           elit. Cumque quam, quod neque provident velit, rem
@@ -107,6 +119,13 @@ export const Projects = () => {
                           inventore debitis quo.
                         </p>
                       </Tab.Pane>
+                      {/* Contenido de las Nuevas Pestañas */}
+                      <Tab.Pane eventKey="fourth">
+                        <p>Contenido de la pestaña 4 (Tab 4)</p>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="fifth">
+                        <p>Contenido de la pestaña 5 (Tab 5)</p>
+                      </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
                 </div>
@@ -115,7 +134,6 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      {/* <img className="background-image-right" src={colorSharp2} alt=""></img> */}
     </section>
   );
 };

@@ -247,7 +247,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url("./assets/img/wallpaperflare.com_wallpaper.jpg");
+  background-image: url("./assets/img/top-bg.jpg");
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -387,15 +387,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 56%;
 }
 .project .nav.nav-pills {
-  width: 72%;
+  width: 80%; /* Ajustar según sea necesario */
   margin: 0 auto;
   border-radius: 50px;
   background-color: rgb(255 255 255 / 10%);
   overflow: hidden;
 }
+
 .project .nav.nav-pills .nav-item {
-  width: 33.33333%;
+  width: 20%; /* Ajustar según sea necesario */
 }
+
 .project .nav.nav-pills .nav-link {
   background-color: transparent;
   border-radius: 0;
@@ -410,6 +412,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   z-index: 0;
 }
+
 .project .nav.nav-pills .nav-link::before {
   content: "";
   position: absolute;
@@ -425,20 +428,34 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project .nav.nav-pills .nav-link.active::before {
   width: 100% !important;
 }
+
 .project .nav.nav-pills .nav-link.active {
   border: 1px solid rgba(255, 255, 255, 1);
 }
+
+/* Agregar estilos específicos para cada nueva pestaña si es necesario */
 .nav-link#projects-tabs-tab-first {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 55px 0px 0px 55px;
 }
+
 .nav-link#projects-tabs-tab-second {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
+
 .nav-link#projects-tabs-tab-third {
   border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.nav-link#projects-tabs-tab-fifth {
+  border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 0 55px 55px 0;
+}
+
+.nav-link#projects-tabs-tab-fourth {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 .proj-imgbx {
   position: relative;
@@ -492,7 +509,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   right: 0;
   z-index: -4;
 }
+@media screen and (max-width: 767px) {
+  .project .nav.nav-pills {
+    width: 100%;
+  }
 
+  .project .nav.nav-pills .nav-item {
+    width: 20%;
+  }
+
+  .project .nav.nav-pills .nav-link {
+    font-size: 0.6rem; /* Ajustar según sea necesario para dispositivos móviles */
+  }
+}
 /************ Contact Css ************/
 .contact {
   background: linear-gradient(90.21deg, #59ba50 -5.91%, #4a2fbd 111.58%);
