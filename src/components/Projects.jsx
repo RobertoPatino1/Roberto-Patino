@@ -1,8 +1,5 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-// import projImg1 from "../assets/img/project-img1.png";
-// import projImg2 from "../assets/img/project-img2.png";
-// import projImg3 from "../assets/img/project-img3.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import { dev_projects } from "../assets/js/projects";
@@ -74,29 +71,32 @@ export const Projects = () => {
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
+                        <Row>
+                          {low_level_projects.map((project, index) => (
+                            <ProjectCard key={index} {...project} />
+                          ))}
+                        </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
+                        <Row>
+                          {ds_projects.map((project, index) => (
+                            <ProjectCard key={index} {...project} />
+                          ))}
+                        </Row>
                       </Tab.Pane>
-                      {/* Contenido de las Nuevas Pestañas */}
                       <Tab.Pane eventKey="fourth">
-                        <p>Contenido de la pestaña 4 (Tab 4)</p>
+                        <Row>
+                          {game_projects.map((project, index) => (
+                            <ProjectCard key={index} {...project} />
+                          ))}
+                        </Row>{" "}
                       </Tab.Pane>
                       <Tab.Pane eventKey="fifth">
-                        <p>Contenido de la pestaña 5 (Tab 5)</p>
+                        <Row>
+                          {desktop_projects.map((project, index) => (
+                            <ProjectCard key={index} {...project} />
+                          ))}
+                        </Row>{" "}
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
