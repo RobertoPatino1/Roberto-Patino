@@ -25,7 +25,6 @@ export const Skills = () => {
       items: 1,
     },
   };
-  //Todo: Add more skills
   return (
     <section className="skill" id="skills">
       <Container>

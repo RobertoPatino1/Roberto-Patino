@@ -509,6 +509,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   right: 0;
   z-index: -4;
 }
+
+.projectLink {
+  color: #4b39b4;
+  text-decoration: solid;
+}
+
 @media screen and (max-width: 767px) {
   .project .nav.nav-pills {
     width: 100%;

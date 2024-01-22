@@ -1,5 +1,6 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
+
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import { dev_projects } from "../assets/js/projects";
@@ -47,7 +48,6 @@ export const Projects = () => {
                       <Nav.Item>
                         <Nav.Link eventKey="third">Data Science/ML</Nav.Link>
                       </Nav.Item>
-                      {/* Nuevas Pestañas */}
                       <Nav.Item>
                         <Nav.Link eventKey="fourth">Game Development</Nav.Link>
                       </Nav.Item>
@@ -73,7 +73,7 @@ export const Projects = () => {
                       <Tab.Pane eventKey="second">
                         <Row>
                           {low_level_projects.map((project, index) => (
-                            <ProjectCard key={index} {...project} />
+                            <ProjectCard key={index} {...project}></ProjectCard>
                           ))}
                         </Row>
                       </Tab.Pane>
