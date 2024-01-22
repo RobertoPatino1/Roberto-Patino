@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import contactImg from "../assets/img/contact-me.svg";
-// import { AlertMsg } from "./Alert_Msg";
 
 //TODO: FIX FORM SEND, IT CAUSES AN ERROR
 export const Contact = () => {

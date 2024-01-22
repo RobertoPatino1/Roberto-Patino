@@ -13,7 +13,12 @@ export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   //TODO: Add new words!!!
-  const toRotate = ["Pentester", "Web Developer", "Web Designer"];
+  const toRotate = [
+    "Pentester",
+    "Full Stack Developer",
+    "Software Engineer",
+    "Game Developer",
+  ];
   const [text, setText] = useState("");
 
   const [delta, setDelta] = useState(300 - Math.random() * 100);
@@ -66,15 +71,17 @@ export const Banner = () => {
                     Welcome to my Developer Portfolio
                   </span>
                   <h1>
-                    {"Hi I'm Roberto! "}
+                    {"Hi I'm Roberto!"}
+                    <br></br>
+                    {"A passionate"}
                     <br></br>
                     <span id="cli">~$ </span>
                     <span className="wrap">{text}</span>
                   </h1>
                   <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua
+                    I'm a visionary and dedicated forward thinking Computer
+                    Science student fueled by an unwavering enthusiasm on
+                    Offensive Cyber Security and Software Engineering.
                   </p>
                   <button onClick={() => console.log("connect")}>
                     Let's connect!
