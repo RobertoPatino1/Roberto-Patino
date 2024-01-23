@@ -2,6 +2,8 @@ import projImg1 from "../img/sleep.png";
 import projImg2 from "../img/climate.png";
 import projImg3 from "../img/calculator.png";
 import projImg4 from "../img/taws.png";
+import projImg5 from "../img/portfolio.png";
+import projImg6 from "../img/twitter.png";
 
 export const dev_projects = [
   {
@@ -38,7 +40,7 @@ export const dev_projects = [
   {
     title: "My Developer Portfolio",
     description: "My Developer Portfolio built with react",
-    imgUrl: projImg3,
+    imgUrl: projImg5,
     deployedUrl: "",
     repositoryUrl: "https://github.com/RobertoPatino1/CloneChirp",
   },
@@ -46,7 +48,7 @@ export const dev_projects = [
     title: "CloneChirp",
     description:
       "A fully functional Twitter clone built with React and Django. (Still in the works)",
-    imgUrl: projImg3,
+    imgUrl: projImg6,
     deployedUrl: "",
     repositoryUrl: "https://github.com/RobertoPatino1/CloneChirp",
   },
