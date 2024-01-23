@@ -1,6 +1,7 @@
-import projImg1 from "../img/project-img1.png";
-import projImg2 from "../img/project-img2.png";
-import projImg3 from "../img/project-img3.png";
+import projImg1 from "../img/sleep.png";
+import projImg2 from "../img/climate.png";
+import projImg3 from "../img/calculator.png";
+import projImg4 from "../img/taws.png";
 
 export const dev_projects = [
   {
@@ -30,7 +31,7 @@ export const dev_projects = [
   {
     title: "Taws Landing Page",
     description: "Landing Page for the TAWS student group of ESPOL",
-    imgUrl: projImg1,
+    imgUrl: projImg4,
     deployedUrl: "https://robertopatino1.github.io/TawsLandingPage/",
     repositoryUrl: "https://github.com/RobertoPatino1/TawsLandingPage",
   },
@@ -62,14 +63,16 @@ export const low_level_projects = [
   },
   {
     title: "Queue-Quasar",
-    description: "Design & Development",
+    description:
+      "A multi queue system measuring CLI tool built in C, ideal for saving constant metrics of an Operating System",
     imgUrl: projImg2,
     deployedUrl: "",
     repositoryUrl: "https://github.com/RobertoPatino1/QueueQuasar",
   },
   {
     title: "Therm-Sense",
-    description: "Design & Development",
+    description:
+      "A CLI interface to retrieve climate related data emitted by an esp32 board",
     imgUrl: projImg3,
     deployedUrl: "",
     repositoryUrl: "https://github.com/RobertoPatino1/ThermSense",
