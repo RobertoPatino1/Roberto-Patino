@@ -387,7 +387,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 56%;
 }
 .project .nav.nav-pills {
-  width: 80%; /* Ajustar según sea necesario */
+  width: 80%; 
   margin: 0 auto;
   border-radius: 50px;
   background-color: rgb(255 255 255 / 10%);
@@ -395,7 +395,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .project .nav.nav-pills .nav-item {
-  width: 20%; /* Ajustar según sea necesario */
+  width: 20%; 
 }
 
 .project .nav.nav-pills .nav-link {
@@ -433,7 +433,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border: 1px solid rgba(255, 255, 255, 1);
 }
 
-/* Agregar estilos específicos para cada nueva pestaña si es necesario */
+
 .nav-link#projects-tabs-tab-first {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 55px 0px 0px 55px;
@@ -525,7 +525,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 
   .project .nav.nav-pills .nav-link {
-    font-size: 0.6rem; /* Ajustar según sea necesario para dispositivos móviles */
+    font-size: 0.6rem; 
   }
 }
 /************ Contact Css ************/
